@@ -153,10 +153,10 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: rec/train
+    data_dir: /kaggle/working/rec/train
     ext_op_transform_idx: 1
     label_file_list:
-    - rec/train_label.txt
+    - /kaggle/working/rec/train_label.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
@@ -185,9 +185,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: rec/eval
+    data_dir: /kaggle/working/rec/eval
     label_file_list:
-    - rec/eval_label.txt
+    - /kaggle/working/rec/eval_label.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
