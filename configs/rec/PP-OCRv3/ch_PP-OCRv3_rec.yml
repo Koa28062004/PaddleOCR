@@ -12,8 +12,8 @@ Global:
   checkpoints:
   save_inference_dir:
   use_visualdl: false
-  infer_img: doc/imgs_words/ch/word_1.jpg
-  character_dict_path: ppocr/utils/ppocr_keys_v1.txt
+  infer_img: /kaggle/working/PaddleOCR/doc/imgs_words/ch/word_1.jpg
+  character_dict_path: /kaggle/working/PaddleOCR/ppocr/utils/SinoNom_vocab.txt
   max_text_length: &max_text_length 25
   infer_mode: false
   use_space_char: true
@@ -77,10 +77,10 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./train_data/
+    data_dir: /kaggle/working/rec/train
     ext_op_transform_idx: 1
     label_file_list:
-    - ./train_data/train_list.txt
+    - /kaggle/working/rec/train_label.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
@@ -109,9 +109,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./train_data
+    data_dir: /kaggle/working/rec/eval
     label_file_list:
-    - ./train_data/val_list.txt
+    - /kaggle/working/rec/eval_label.txt
     transforms:
     - DecodeImage:
         img_mode: BGR
