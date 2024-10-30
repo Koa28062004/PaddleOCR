@@ -20,6 +20,11 @@ Global:
   distributed: true
   save_res_path: ./output/rec/sn_predicts_ppocrv3_distillation.txt
   d2s_train_image_shape: [3, 48, -1]
+  wandb:
+    project: SinoNom-OCR
+    entity: 22APCS
+    name: SinoNom-OCR
+  use_wandb: true
 
 
 Optimizer:
