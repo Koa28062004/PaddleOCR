@@ -8,8 +8,8 @@ Global:
   save_model_dir: ./output/db_mv3/
   save_epoch_step: 1200
   # evaluation is run every 2000 iterations
-  eval_batch_step: [0, 50]
-  cal_metric_during_train: True
+  eval_batch_step: [0, 2000]
+  cal_metric_during_train: False
   pretrained_model: ./pretrain_models/MobileNetV3_large_x0_5_pretrained
   checkpoints:
   save_inference_dir:
@@ -106,7 +106,7 @@ Train:
   loader:
     shuffle: True
     drop_last: False
-    batch_size_per_card: 8
+    batch_size_per_card: 16
     num_workers: 8
     use_shared_memory: True
 
