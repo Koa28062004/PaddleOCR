@@ -1,7 +1,7 @@
 Global:
   debug: false
-  use_gpu: false
-  epoch_num: 2
+  use_gpu: true
+  epoch_num: 800
   log_smooth_window: 20
   print_batch_step: 10
   save_model_dir: ./output/sn_rec_ppocr_v3_distillation
