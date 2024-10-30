@@ -106,7 +106,7 @@ Train:
   loader:
     shuffle: True
     drop_last: False
-    batch_size_per_card: 16
+    batch_size_per_card: 8
     num_workers: 8
     use_shared_memory: True
 
